@@ -1,0 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --home-color1 : #0cad93;
+    --home-color2 : #0ac3a7;
+    --hover: #0ca289;
+    --font : 'Montserrat', sans-serif;
+    --font-color : #fffdd8;
+    --red : #d83a37;
+    --or : #ffb400;
+}
+
+body {
+    background-color: var(--home-color2);
+    color: var(--font-color);
+    font-family: var(--font);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--home-color1);
+    font-size: 3em;
+    font-weight: bold;
+    height: 10vh;
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newCadexBtn {
+    width: fit-content;
+    padding: 1em;
+    border-radius: 20px;
+    border: 3px solid var(--or);
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+#newCadexBtn:hover {
+    background-color: var(--hover);
+}
+
+#result {
+    font-size: 3em;
+    color: var(--hover);
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1em;
+}
+
+#name {
+    color: var(--red);
+}
+
