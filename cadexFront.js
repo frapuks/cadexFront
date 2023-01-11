@@ -122,7 +122,7 @@ const app = {
         app.targetNameElement.textContent = newCadex.name;
         app.targetAdjectiveElement.textContent = newCadex.adjective;
         app.targetVerbElement.textContent = newCadex.verb;
-        app.targetComplementElement.textContent = `${newCadex.complement}"`;
+        app.targetComplementElement.textContent = `${newCadex.complement} "`;
     },
 
     generateCadex : () => {
