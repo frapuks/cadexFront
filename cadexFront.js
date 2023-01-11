@@ -136,12 +136,12 @@ const app = {
 
     getRandom(listName) {
         const currentList = app.data[listName];
-        const randomIndex = app.getRandomIndex(currentList);
+        const randomIndex = app.getRandomIndex(currentList.length);
         return currentList[randomIndex];
     },
 
-    getRandomIndex(array) {
-        return new Date().getTime() % array.length;
+    getRandomIndex(max) {
+        return Math.floor(Math.random() * max);
     },
 }
 
